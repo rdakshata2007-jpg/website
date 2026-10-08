@@ -1,0 +1,887 @@
+/* =========================================
+   JANVOICE AI
+   TRACK COMPLAINT PAGE
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.track-page {
+  min-height: 100vh;
+  background: #f5f8fc;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.track-header {
+  min-height: 78px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 6%;
+
+  gap: 30px;
+}
+
+
+.track-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+
+  margin-right: auto;
+}
+
+
+.track-logo {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #eaf3ff;
+  color: #1769d2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  font-size: 15px;
+}
+
+
+.track-brand h1 {
+  font-size: 22px;
+  color: #1d4f91;
+  margin: 0;
+}
+
+
+.track-brand p {
+  margin: 3px 0 0;
+
+  font-size: 10px;
+  color: #64748b;
+}
+
+
+.track-navigation {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+
+.track-navigation button {
+  border: none;
+  background: transparent;
+
+  color: #243247;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 8px 0;
+}
+
+
+.track-navigation button:hover {
+  color: #1769d2;
+}
+
+
+.track-navigation .active {
+  color: #1769d2;
+}
+
+
+.track-official-button {
+  border: 1px solid #d7dee8;
+
+  background: #ffffff;
+
+  color: #344054;
+
+  padding: 8px 14px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+.track-official-button:hover {
+  background: #f1f5f9;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.track-main {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: 80px 24px 100px;
+}
+
+
+/* =========================================
+   SEARCH SECTION
+========================================= */
+
+.track-search-section {
+  text-align: center;
+}
+
+
+.track-label {
+  color: #245ba5;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 15px;
+}
+
+
+.track-search-section h2 {
+  font-size: 38px;
+
+  color: #344b70;
+
+  margin: 0 0 20px;
+
+  font-weight: 700;
+}
+
+
+.track-description {
+  font-size: 16px;
+
+  color: #526174;
+
+  margin: 0 auto 32px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   SEARCH BOX
+========================================= */
+
+.track-search-box {
+  max-width: 680px;
+
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 5px 20px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.track-search-box input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  padding: 14px 16px;
+
+  font-size: 15px;
+
+  color: #172033;
+
+  background: #ffffff;
+}
+
+
+.track-search-box input::placeholder {
+  color: #7b8794;
+}
+
+
+.track-search-box button {
+  border: none;
+
+  background: #1769d2;
+
+  color: #ffffff;
+
+  padding: 0 26px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.track-search-box button:hover {
+  background: #1256ad;
+}
+
+
+.track-search-box button:disabled {
+  opacity: 0.7;
+
+  cursor: not-allowed;
+}
+
+
+.demo-text {
+  margin-top: 16px;
+
+  color: #68778a;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.track-message {
+  max-width: 680px;
+
+  margin: 25px auto 0;
+
+  padding: 14px 18px;
+
+  border-radius: 8px;
+
+  background: #fff4f4;
+
+  border: 1px solid #f0caca;
+
+  color: #a12a2a;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: left;
+}
+
+
+.track-message span {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background: #f8d7da;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+
+.track-message p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   RESULT CARD
+========================================= */
+
+.complaint-result-card {
+  max-width: 850px;
+
+  margin: 50px auto 0;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe6ef;
+
+  border-radius: 12px;
+
+  padding: 28px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================
+   RESULT HEADER
+========================================= */
+
+.result-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #e7ecf2;
+}
+
+
+.result-small-label {
+  display: block;
+
+  font-size: 10px;
+
+  color: #6b7787;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+
+  margin-bottom: 7px;
+}
+
+
+.result-header h3 {
+  margin: 0;
+
+  font-size: 21px;
+
+  color: #243b5a;
+}
+
+
+.result-priority {
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+
+.result-priority.high {
+  background: #fee2e2;
+  color: #b42318;
+}
+
+
+.result-priority.medium {
+  background: #fff3cd;
+  color: #946200;
+}
+
+
+.result-priority.low {
+  background: #dcfce7;
+  color: #18794e;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.result-location {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 20px 0;
+}
+
+
+.location-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background: #edf5ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+.result-location strong {
+  display: block;
+
+  color: #253b58;
+
+  font-size: 15px;
+}
+
+
+.result-location p {
+  margin: 4px 0 0;
+
+  color: #68778a;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.result-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+
+.result-info {
+  border: 1px solid #dfe6ef;
+
+  border-radius: 7px;
+
+  padding: 15px 16px;
+
+  background: #fbfdff;
+}
+
+
+.result-info span {
+  display: block;
+
+  color: #718096;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+}
+
+
+.result-info strong {
+  color: #243b5a;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.tracking-status {
+  padding: 22px;
+
+  border: 1px solid #dfe6ef;
+
+  border-radius: 8px;
+
+  background: #fbfdff;
+}
+
+
+.status-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+
+.status-heading span {
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+
+.status-heading strong {
+  color: #1769d2;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.status-progress {
+  height: 7px;
+
+  background: #e5eaf0;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+.status-progress-fill {
+  height: 100%;
+
+  background: #1769d2;
+
+  border-radius: 10px;
+
+  transition: width 0.4s ease;
+}
+
+
+/* =========================================
+   STATUS STEPS
+========================================= */
+
+.status-steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: -2px;
+
+  padding-top: 18px;
+}
+
+
+.status-step {
+  text-align: center;
+
+  color: #8995a5;
+
+  font-size: 11px;
+}
+
+
+.step-circle {
+  width: 28px;
+  height: 28px;
+
+  margin: 0 auto 8px;
+
+  border-radius: 50%;
+
+  background: #edf0f4;
+
+  color: #7b8794;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.status-step.completed {
+  color: #1769d2;
+}
+
+
+.status-step.completed .step-circle {
+  background: #1769d2;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.complaint-description {
+  margin-top: 20px;
+
+  padding: 18px;
+
+  border-radius: 8px;
+
+  background: #f7faff;
+
+  border: 1px solid #e0eaf7;
+}
+
+
+.complaint-description span {
+  display: block;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  color: #64748b;
+
+  margin-bottom: 8px;
+}
+
+
+.complaint-description p {
+  margin: 0;
+
+  color: #344054;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   AI BOX
+========================================= */
+
+.track-ai-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 20px;
+
+  padding: 17px;
+
+  border: 1px solid #dbe7f5;
+
+  border-radius: 8px;
+
+  background: #f6faff;
+}
+
+
+.track-ai-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #e5f0ff;
+
+  color: #1769d2;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+}
+
+
+.track-ai-box strong {
+  color: #24466f;
+
+  font-size: 13px;
+}
+
+
+.track-ai-box p {
+  margin: 4px 0 0;
+
+  color: #68778a;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.track-actions {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+
+.new-report-button,
+.home-track-button {
+  flex: 1;
+
+  padding: 13px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.new-report-button {
+  background: #1769d2;
+
+  color: #ffffff;
+
+  border: 1px solid #1769d2;
+}
+
+
+.new-report-button:hover {
+  background: #1256ad;
+}
+
+
+.home-track-button {
+  background: #ffffff;
+
+  color: #344054;
+
+  border: 1px solid #cbd5e1;
+}
+
+
+.home-track-button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .track-header {
+    padding: 15px 4%;
+
+    flex-wrap: wrap;
+  }
+
+  .track-brand {
+    margin-right: 0;
+  }
+
+  .track-navigation {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .track-official-button {
+    margin-left: auto;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .track-main {
+    padding: 55px 15px 70px;
+  }
+
+  .track-search-section h2 {
+    font-size: 30px;
+  }
+
+  .track-search-box {
+    flex-direction: column;
+  }
+
+  .track-search-box button {
+    min-height: 46px;
+  }
+
+  .result-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-header {
+    flex-direction: column;
+  }
+
+  .status-steps {
+    gap: 5px;
+  }
+
+  .status-step {
+    font-size: 9px;
+  }
+
+  .track-navigation {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .track-actions {
+    flex-direction: column;
+  }
+
+}

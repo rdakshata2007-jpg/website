@@ -1,0 +1,576 @@
+/* =========================================
+   JANVOICE AI - REPORT PROBLEM
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.report-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #26364d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.report-header {
+  background: #ffffff;
+  border-bottom: 1px solid #d7e0ea;
+  padding: 20px 6%;
+}
+
+.header-inner {
+  width: 100%;
+}
+
+.report-header h1 {
+  margin: 0;
+  color: #234f91;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.report-header p {
+  margin-top: 5px;
+  color: #68758a;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.report-container {
+  width: 100%;
+  padding: 40px 7%;
+  min-height: calc(100vh - 150px);
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro-section h2 {
+  margin: 0 0 10px;
+  font-size: 27px;
+  color: #263c5c;
+}
+
+.intro-section p {
+  margin: 0 0 30px;
+  color: #66748a;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.report-section {
+  padding: 25px 0 30px;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.report-section h3,
+.complaint-content h3,
+.location-section h3 {
+  margin-bottom: 20px;
+  color: #263c5c;
+  font-size: 18px;
+}
+
+
+/* =========================================
+   METHOD CARDS
+========================================= */
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.method-card {
+  min-height: 125px;
+  border: 1px solid #d7e0e9;
+  border-radius: 9px;
+  background: #ffffff;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s ease;
+}
+
+.method-card:hover {
+  border-color: #3974bf;
+  background: #f8fbff;
+  transform: translateY(-2px);
+}
+
+.method-card.selected {
+  border: 2px solid #2866ad;
+  background: #eef5ff;
+}
+
+.method-icon {
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.method-card span {
+  color: #344864;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.method-card small {
+  margin-top: 5px;
+  color: #7b8798;
+  font-size: 12px;
+}
+
+.method-message {
+  margin-top: 18px;
+  color: #8a96a6;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   COMPLAINT CONTENT
+========================================= */
+
+.complaint-content {
+  padding: 28px 0;
+  border-bottom: 1px solid #e0e6ed;
+}
+
+.complaint-content input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px dashed #9baabc;
+  border-radius: 7px;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.file-name {
+  margin-top: 10px;
+  color: #2b6a42;
+  font-size: 13px;
+}
+
+.complaint-content textarea {
+  width: 100%;
+  min-height: 110px;
+  margin-top: 18px;
+
+  padding: 14px;
+  resize: vertical;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.complaint-content textarea:focus {
+  border-color: #3974bf;
+}
+
+
+/* =========================================
+   VOICE SECTION
+========================================= */
+
+.voice-section {
+  padding: 5px 0 0;
+}
+
+.voice-section h3 {
+  margin-bottom: 15px;
+}
+
+
+/* SMALL SPEAKING BUTTON */
+
+.start-speaking-button {
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #3975bc;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.start-speaking-button:hover {
+  background: #2d63a1;
+}
+
+.start-speaking-button.recording {
+  background: #d84b4b;
+}
+
+.start-speaking-button.recording:hover {
+  background: #b93636;
+}
+
+
+/* =========================================
+   SPEECH TO TEXT
+========================================= */
+
+.speech-text-section {
+  margin-top: 16px;
+}
+
+.speech-text-section label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #637189;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.speech-text-section textarea {
+  width: 100%;
+
+  min-height: 75px;
+  max-height: 120px;
+
+  padding: 11px 13px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  resize: vertical;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+  color: #26364d;
+
+  outline: none;
+}
+
+.speech-text-section textarea:focus {
+  border-color: #3974bf;
+}
+
+
+/* =========================================
+   SPEECH WARNING
+========================================= */
+
+.speech-warning {
+  margin-top: 8px;
+
+  color: #c0392b;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.location-section {
+  padding: 30px 0;
+}
+
+.detect-button {
+  padding: 11px 18px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #3975bc;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.detect-button:hover {
+  background: #2c62a1;
+}
+
+.detect-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+/* =========================================
+   LOCATION INPUTS
+========================================= */
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  margin-top: 25px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  color: #66748a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 13px 14px;
+
+  border: 1px solid #d1d9e3;
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  font-size: 14px;
+  color: #26364d;
+
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #3974bf;
+}
+
+
+/* =========================================
+   SUBMIT
+========================================= */
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  border-radius: 5px;
+
+  background: #32b57d;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #289d6c;
+}
+
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.success-section {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 40px;
+
+  text-align: center;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px rgba(40, 58, 80, 0.08);
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #35b97f;
+  color: white;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.success-section h2 {
+  margin-top: 18px;
+  color: #284b76;
+  font-size: 25px;
+}
+
+.success-text {
+  color: #69778a;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESULT CARD
+========================================= */
+
+.complaint-result {
+  margin-top: 30px;
+  border: 1px solid #dde4eb;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.result-row {
+  display: grid;
+  grid-template-columns: 45% 55%;
+
+  padding: 15px 18px;
+
+  border-bottom: 1px solid #e7ebef;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.result-row span {
+  color: #738096;
+  font-size: 13px;
+}
+
+.result-row strong {
+  color: #263c5c;
+  font-size: 14px;
+}
+
+.result-row .status {
+  color: #24955d;
+}
+
+
+/* =========================================
+   ANOTHER COMPLAINT
+========================================= */
+
+.success-actions {
+  margin-top: 25px;
+}
+
+.another-button {
+  padding: 12px 22px;
+
+  border: 1px solid #356dad;
+  border-radius: 5px;
+
+  background: white;
+  color: #356dad;
+
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.another-button:hover {
+  background: #f0f6ff;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.report-footer {
+  padding: 18px;
+  text-align: center;
+
+  background: #1f5aa6;
+  color: white;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 800px) {
+
+  .report-container {
+    padding: 30px 5%;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .success-section {
+    padding: 25px;
+  }
+
+}
+
+
+@media (max-width: 500px) {
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-header h1 {
+    font-size: 23px;
+  }
+
+  .intro-section h2 {
+    font-size: 23px;
+  }
+
+  .result-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+}

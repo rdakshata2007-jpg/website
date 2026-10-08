@@ -1,0 +1,394 @@
+/* =========================================
+   CITIZEN REGISTRATION
+========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.register-page {
+  min-height: 100vh;
+
+  background: #f5f8fc;
+
+  color: #14213d;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+.register-header {
+  min-height: 82px;
+
+  background: white;
+
+  border-bottom: 1px solid #e1e7ee;
+
+  padding: 0 6%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.register-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+
+.register-emblem {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 10px;
+
+  background: #0b4f8a;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+
+.register-brand h1 {
+  color: #0b4f8a;
+
+  font-size: 23px;
+
+  margin-bottom: 3px;
+}
+
+
+.register-brand p {
+  color: #536174;
+
+  font-size: 13px;
+}
+
+
+.register-back {
+  border: 1px solid #ccd7e2;
+
+  background: white;
+
+  color: #17527f;
+
+  padding: 10px 17px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.register-back:hover {
+  background: #edf5fb;
+}
+
+
+/* MAIN */
+
+.register-main {
+  min-height: calc(100vh - 150px);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+
+/* CARD */
+
+.register-card {
+  width: 100%;
+
+  max-width: 720px;
+
+  background: white;
+
+  border: 1px solid #dce5ed;
+
+  border-radius: 14px;
+
+  padding: 40px;
+
+  box-shadow: 0 12px 35px rgba(22, 54, 86, 0.08);
+}
+
+
+/* HEADING */
+
+.register-heading {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+
+.register-heading span {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  color: #0b5c97;
+}
+
+
+.register-heading h2 {
+  margin-top: 10px;
+
+  font-size: 30px;
+
+  color: #102f50;
+}
+
+
+.register-heading p {
+  margin-top: 8px;
+
+  font-size: 14px;
+
+  color: #617287;
+}
+
+
+/* FORM */
+
+.register-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 18px;
+}
+
+
+.register-field {
+  margin-bottom: 20px;
+}
+
+
+.register-field label {
+  display: block;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #29435c;
+
+  margin-bottom: 8px;
+}
+
+
+.register-field input {
+  width: 100%;
+
+  height: 47px;
+
+  border: 1px solid #cbd6e2;
+
+  border-radius: 7px;
+
+  padding: 0 13px;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+
+.register-field input:focus {
+  border-color: #1970b7;
+
+  box-shadow: 0 0 0 3px rgba(25, 112, 183, 0.1);
+}
+
+
+/* TERMS */
+
+.terms {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  margin: 5px 0 24px;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  color: #596d82;
+}
+
+
+.terms input {
+  margin-top: 3px;
+}
+
+
+/* BUTTON */
+
+.create-account-btn {
+  width: 100%;
+
+  height: 49px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #0b5c97;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.create-account-btn:hover {
+  background: #084c7e;
+}
+
+
+.create-account-btn span {
+  margin-left: 8px;
+}
+
+
+/* LOGIN */
+
+.already-account {
+  border-top: 1px solid #e4e9ef;
+
+  margin-top: 28px;
+
+  padding-top: 22px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #65778a;
+}
+
+
+.already-account button {
+  border: none;
+
+  background: transparent;
+
+  color: #0b5c97;
+
+  font-weight: 700;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.register-footer {
+  min-height: 68px;
+
+  background: white;
+
+  border-top: 1px solid #e1e7ee;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 6%;
+
+  color: #66778a;
+
+  font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 650px) {
+
+  .register-header {
+    padding: 15px 20px;
+  }
+
+  .register-brand h1 {
+    font-size: 19px;
+  }
+
+  .register-brand p {
+    font-size: 11px;
+  }
+
+  .register-emblem {
+    width: 42px;
+    height: 42px;
+  }
+
+  .register-back {
+    padding: 8px 11px;
+
+    font-size: 12px;
+  }
+
+  .register-card {
+    padding: 25px 20px;
+  }
+
+  .register-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .register-heading h2 {
+    font-size: 25px;
+  }
+
+  .register-footer {
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 7px;
+  }
+
+}

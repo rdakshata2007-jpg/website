@@ -1,0 +1,864 @@
+/* =====================================================
+   JANVOICE AI
+   OFFICIAL LOGIN PAGE
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+.official-page {
+  min-height: 100vh;
+  background: #f3f6fa;
+  color: #172033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.official-header {
+  background: #ffffff;
+  border-bottom: 1px solid #dce3ec;
+  box-shadow: 0 2px 10px rgba(20, 33, 61, 0.05);
+}
+
+.official-header-inner {
+  max-width: 1250px;
+  margin: auto;
+  min-height: 82px;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+}
+
+
+/* BRAND */
+
+.official-brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.official-brand-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #174a8b;
+  color: white;
+
+  border-radius: 10px;
+
+  font-size: 19px;
+  font-weight: 800;
+
+  box-shadow: 0 5px 15px rgba(23, 74, 139, 0.20);
+}
+
+.official-brand h1 {
+  font-size: 21px;
+  margin: 0 0 3px;
+  color: #172033;
+}
+
+.official-brand p {
+  margin: 0;
+  color: #68758a;
+  font-size: 12px;
+}
+
+
+/* PORTAL LABEL */
+
+.official-portal-label {
+  margin-left: auto;
+}
+
+.official-portal-label span {
+  display: inline-block;
+
+  padding: 8px 15px;
+
+  background: #edf4ff;
+  border: 1px solid #d3e2f7;
+
+  color: #174a8b;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+/* BACK BUTTON */
+
+.official-back-button {
+  border: 1px solid #d5dde8;
+  background: white;
+
+  color: #40516a;
+
+  padding: 10px 16px;
+
+  border-radius: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.official-back-button:hover {
+  background: #f5f8fc;
+  border-color: #174a8b;
+  color: #174a8b;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.official-main {
+  min-height: calc(100vh - 155px);
+
+  padding: 55px 25px 65px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3f7fc 0%,
+      #ffffff 48%,
+      #eef4fa 100%
+    );
+}
+
+.official-container {
+  max-width: 1120px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 500px;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+
+/* =====================================================
+   LEFT INFORMATION PANEL
+===================================================== */
+
+.official-info-panel {
+  padding: 25px 10px;
+}
+
+.official-shield {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d9e3ef;
+
+  border-radius: 15px;
+
+  font-size: 30px;
+
+  margin-bottom: 25px;
+
+  box-shadow: 0 10px 25px rgba(28, 53, 82, 0.08);
+}
+
+.official-small-title {
+  color: #174a8b;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.6px;
+}
+
+.official-info-panel h2 {
+  margin: 13px 0 20px;
+
+  font-size: 43px;
+  line-height: 1.12;
+
+  color: #16243a;
+
+  letter-spacing: -1px;
+}
+
+.official-info-panel h2 span {
+  color: #1e65ad;
+}
+
+.official-info-panel > p {
+  max-width: 510px;
+
+  color: #617087;
+
+  font-size: 16px;
+  line-height: 1.75;
+
+  margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.official-features {
+  display: flex;
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.official-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.feature-number {
+  width: 39px;
+  height: 39px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf2fc;
+
+  border: 1px solid #d3e1f0;
+
+  border-radius: 9px;
+
+  color: #174a8b;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.official-feature strong {
+  display: block;
+
+  color: #26364e;
+
+  font-size: 14px;
+
+  margin-bottom: 3px;
+}
+
+.official-feature p {
+  margin: 0;
+
+  color: #718096;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   LOGIN AREA
+===================================================== */
+
+.official-login-area {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   LOGIN CARD
+===================================================== */
+
+.official-login-card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #dce4ed;
+
+  border-radius: 18px;
+
+  padding: 34px;
+
+  box-shadow:
+    0 20px 55px rgba(31, 55, 82, 0.10),
+    0 3px 10px rgba(31, 55, 82, 0.04);
+}
+
+
+/* CARD HEADER */
+
+.login-card-header {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 14px;
+}
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf4ff;
+
+  border: 1px solid #d4e3f5;
+
+  border-radius: 11px;
+
+  font-size: 22px;
+}
+
+.login-card-header span {
+  display: block;
+
+  color: #3973aa;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 1.3px;
+
+  margin-bottom: 4px;
+}
+
+.login-card-header h3 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 25px;
+}
+
+
+/* DESCRIPTION */
+
+.login-description {
+  color: #718096;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  margin: 0 0 20px;
+}
+
+
+/* =====================================================
+   SECURITY NOTICE
+===================================================== */
+
+.security-notice {
+  display: flex;
+
+  gap: 11px;
+
+  padding: 13px 14px;
+
+  background: #f4f8fc;
+
+  border: 1px solid #dce7f2;
+
+  border-left: 3px solid #3973aa;
+
+  border-radius: 8px;
+
+  margin-bottom: 23px;
+}
+
+.security-notice > span {
+  width: 21px;
+  height: 21px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #3973aa;
+
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  flex-shrink: 0;
+}
+
+.security-notice strong {
+  display: block;
+
+  color: #2c405a;
+
+  font-size: 12px;
+
+  margin-bottom: 3px;
+}
+
+.security-notice p {
+  margin: 0;
+
+  color: #718096;
+
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.official-form-group {
+  margin-bottom: 17px;
+}
+
+.official-form-group label {
+  display: block;
+
+  color: #33445c;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-bottom: 7px;
+}
+
+.official-form-group select,
+.official-form-group input {
+  width: 100%;
+
+  height: 46px;
+
+  border: 1px solid #d5dee9;
+
+  background: #fbfcfe;
+
+  border-radius: 7px;
+
+  padding: 0 13px;
+
+  color: #24354c;
+
+  font-size: 13px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.official-form-group select:focus,
+.official-form-group input:focus {
+  border-color: #3973aa;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 3px rgba(57, 115, 170, 0.10);
+}
+
+.official-form-group select {
+  cursor: pointer;
+}
+
+
+/* INPUT ICON */
+
+.official-input-wrapper {
+  position: relative;
+}
+
+.official-input-wrapper > span {
+  position: absolute;
+
+  left: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 14px;
+
+  opacity: 0.65;
+}
+
+.official-input-wrapper input {
+  padding-left: 39px;
+}
+
+
+/* =====================================================
+   OPTIONS
+===================================================== */
+
+.official-login-options {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px 0 22px;
+}
+
+.remember-official {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #65748a;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.remember-official input {
+  width: 14px;
+  height: 14px;
+
+  accent-color: #174a8b;
+
+  cursor: pointer;
+}
+
+.forgot-official {
+  border: none;
+  background: transparent;
+
+  color: #27659f;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.forgot-official:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.official-submit-button {
+  width: 100%;
+
+  height: 49px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #174a8b;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  box-shadow: 0 7px 18px rgba(23, 74, 139, 0.20);
+
+  transition: 0.2s;
+}
+
+.official-submit-button span {
+  font-size: 18px;
+
+  transition: 0.2s;
+}
+
+.official-submit-button:hover {
+  background: #123e75;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 9px 22px rgba(23, 74, 139, 0.27);
+}
+
+.official-submit-button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   CARD FOOTER
+===================================================== */
+
+.official-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-top: 21px;
+
+  color: #8995a6;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.official-footer {
+  min-height: 72px;
+
+  padding: 15px 30px;
+
+  background: #17263b;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.official-footer > div {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.official-footer strong {
+  font-size: 13px;
+}
+
+.official-footer span {
+  color: #9eacbd;
+
+  font-size: 11px;
+}
+
+.official-footer p {
+  margin: 0;
+
+  color: #9eacbd;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 950px) {
+
+  .official-container {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    gap: 30px;
+  }
+
+  .official-info-panel {
+    text-align: center;
+  }
+
+  .official-shield {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .official-info-panel > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .official-features {
+    text-align: left;
+
+    max-width: 480px;
+
+    margin: auto;
+  }
+
+  .official-portal-label {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .official-header-inner {
+    min-height: 70px;
+
+    padding: 0 17px;
+  }
+
+  .official-brand-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .official-brand h1 {
+    font-size: 18px;
+  }
+
+  .official-brand p {
+    display: none;
+  }
+
+  .official-back-button {
+    padding: 8px 10px;
+
+    font-size: 11px;
+  }
+
+  .official-main {
+    padding: 35px 15px 45px;
+  }
+
+  .official-info-panel h2 {
+    font-size: 34px;
+  }
+
+  .official-info-panel > p {
+    font-size: 14px;
+  }
+
+  .official-login-card {
+    padding: 25px 20px;
+
+    border-radius: 14px;
+  }
+
+  .official-footer {
+    padding: 18px;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .official-footer > div {
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+}
+
+/* =====================================================
+   STATUS UPDATE SELECT
+===================================================== */
+
+.status-select {
+  min-width: 155px;
+  padding: 9px 30px 9px 10px;
+  border-radius: 7px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-select:hover {
+  border-color: #174a7c;
+}
+
+.status-select:focus {
+  border-color: #174a7c;
+  box-shadow: 0 0 0 2px rgba(23, 74, 124, 0.12);
+}
+
+.status-select:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+/* Submitted */
+
+.status-select.status-submitted {
+  color: #92400e;
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+/* Officer Assigned */
+
+.status-select.status-assigned {
+  color: #1e40af;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* In Progress */
+
+.status-select.status-progress {
+  color: #075985;
+  background: #e0f2fe;
+  border-color: #bae6fd;
+}
+
+/* Resolved */
+
+.status-select.status-resolved {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.status-updating {
+  display: block;
+  margin-top: 4px;
+  color: #64748b;
+  font-size: 11px;
+}

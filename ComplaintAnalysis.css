@@ -1,0 +1,377 @@
+/* =====================================================
+   JANVOICE AI - ANALYSIS PAGE
+===================================================== */
+
+.analysis-page {
+  min-height: 100vh;
+  background: #f3f6fa;
+  padding: 45px 20px;
+  color: #172033;
+}
+
+.analysis-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.analysis-card {
+  background: #ffffff;
+  border: 1px solid #dfe5ec;
+  border-radius: 12px;
+  padding: 30px;
+
+  box-shadow: 0 6px 24px rgba(20, 40, 70, 0.07);
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.analysis-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.analysis-logo {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eaf3ff;
+  color: #174a8b;
+
+  font-weight: 800;
+}
+
+.analysis-heading h1 {
+  font-size: 25px;
+  color: #173f73;
+  margin-bottom: 3px;
+}
+
+.analysis-heading p {
+  font-size: 13px;
+  color: #697586;
+}
+
+
+/* =====================================================
+   COMPLAINT ID
+===================================================== */
+
+.complaint-id-box {
+  padding: 20px;
+
+  background: #edf5fb;
+
+  border-left: 4px solid #174a8b;
+
+  border-radius: 6px;
+
+  margin-bottom: 25px;
+}
+
+.complaint-id-box span,
+.summary-box span,
+.location-summary span,
+.analysis-result span {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  color: #6c7888;
+
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+}
+
+.complaint-id-box strong {
+  display: block;
+
+  font-size: 22px;
+
+  color: #173f73;
+
+  margin-bottom: 5px;
+}
+
+.complaint-id-box p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #687586;
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section-title {
+  font-size: 18px;
+
+  color: #263c59;
+
+  margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   REPORT SUMMARY
+===================================================== */
+
+.report-summary-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.summary-box {
+  min-height: 80px;
+
+  padding: 15px;
+
+  border: 1px solid #dce3eb;
+
+  border-radius: 7px;
+}
+
+.summary-box strong {
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #26364d;
+}
+
+
+/* =====================================================
+   LOCATION
+===================================================== */
+
+.location-summary {
+  margin-top: 12px;
+
+  padding: 15px;
+
+  border: 1px solid #dce3eb;
+
+  border-radius: 7px;
+}
+
+.location-summary strong {
+  font-size: 14px;
+
+  color: #26364d;
+}
+
+
+/* =====================================================
+   AI ANALYSIS
+===================================================== */
+
+.ai-analysis-box {
+  margin-top: 22px;
+
+  padding: 20px;
+
+  border: 1px solid #d6e0eb;
+
+  border-radius: 9px;
+
+  background: #fafcfe;
+}
+
+.ai-analysis-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 18px;
+}
+
+.ai-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #edf4fc;
+
+  color: #174a8b;
+
+  font-size: 18px;
+}
+
+.ai-analysis-heading h2 {
+  font-size: 17px;
+
+  color: #263c59;
+
+  margin-bottom: 2px;
+}
+
+.ai-analysis-heading p {
+  font-size: 12px;
+
+  color: #718094;
+}
+
+.analysis-result-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.analysis-result {
+  padding: 14px;
+
+  background: white;
+
+  border: 1px solid #e0e6ed;
+
+  border-radius: 6px;
+}
+
+.analysis-result strong {
+  font-size: 14px;
+
+  color: #293b52;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   NOTICE
+===================================================== */
+
+.analysis-notice {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 20px;
+
+  padding: 13px;
+
+  background: #f5f7fa;
+
+  border-radius: 6px;
+}
+
+.analysis-notice span {
+  color: #174a8b;
+
+  font-weight: 700;
+}
+
+.analysis-notice p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #687586;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.analysis-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.edit-button,
+.confirm-button {
+  min-height: 48px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.edit-button {
+  background: white;
+
+  border: 1px solid #8a95a3;
+
+  color: #455264;
+}
+
+.confirm-button {
+  background: #238b57;
+
+  border: 1px solid #238b57;
+
+  color: white;
+}
+
+.confirm-button:hover {
+  background: #1c7549;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .analysis-page {
+    padding: 20px 12px;
+  }
+
+  .analysis-card {
+    padding: 20px;
+  }
+
+  .analysis-heading h1 {
+    font-size: 21px;
+  }
+
+  .report-summary-grid,
+  .analysis-result-grid,
+  .analysis-actions {
+    grid-template-columns: 1fr;
+  }
+
+}
